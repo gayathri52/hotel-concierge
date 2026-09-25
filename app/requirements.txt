@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+databricks-sdk>=0.60
