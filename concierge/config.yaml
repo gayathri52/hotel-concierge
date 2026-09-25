@@ -1,0 +1,11 @@
+# Edit these for your workspace, then run notebooks 01 -> 05 in order.
+catalog: four_seasons
+schema: hotel_concierge
+warehouse_id: "a56967811b14eec9"     # serverless SQL warehouse used by SQL tools
+llm_endpoint: databricks-gpt-oss-120b                  # agent LLM (Foundation Model API, tool-calling)
+judge_endpoint: databricks-meta-llama-3-3-70b-instruct # judge LLM — different family than the agent to reduce self-preference bias
+embedding_endpoint: databricks-gte-large-en
+vs_endpoint: four-seasons-vs
+serving_endpoint: four-seasons-agent
+weather_mode: live                           # live (Open-Meteo, no key) | mock (deterministic, for offline demos)
+max_steps: 6                                 # max LLM<->tool iterations per request
